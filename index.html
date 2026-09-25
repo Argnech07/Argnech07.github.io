@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abuela Macha — Salsa Macha Artesanal | Hecha en Parral</title>
+  <meta name="description" content="Salsa Macha Abuela Macha. El toque perfecto en cada bocado. 6 sabores artesanales hechos en Parral, Chihuahua. Ideal para tacos, carnes, mariscos y botanas." />
+  <link rel="icon" type="image/jpeg" href="macha.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@500;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="grain" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollBar"></span></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <a class="nav-brand" href="#top">
+      <span class="nav-logo"><img src="macha.jpg" alt="Abuela Macha" /></span>
+      <span class="nav-name">Abuela <em>Macha</em></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#sabores">Sabores</a>
+      <a href="#fuego">Medidor</a>
+      <a href="#usos">Úsala en</a>
+      <a href="#historia">Historia</a>
+      <a class="nav-cta" href="https://wa.me/526271509265?text=%C2%A1Hola!%20Quiero%20pedir%20Salsa%20Abuela%20Macha%20%F0%9F%8C%B6%EF%B8%8F" target="_blank" rel="noopener">Pedir ahora</a>
+    </nav>
+    <button class="nav-burger" id="navBurger" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero-embers" id="embers" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow--a" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow--b" aria-hidden="true"></div>
+
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="hero-badge reveal">
+            <span class="pulse-dot"></span> Salsa artesanal · Hecha en Parral, Chih.
+          </p>
+          <h1 class="hero-title">
+            <span class="line reveal d1">EL TOQUE</span>
+            <span class="line line--fire reveal d2">PERFECTO</span>
+            <span class="line reveal d3">EN CADA <em>BOCADO</em></span>
+          </h1>
+          <p class="hero-sub reveal d4">
+            Salsa macha de verdad: chiles tostados, aceite dorado y la receta
+            que la abuela guardó por generaciones. <strong>Ocho sabores, un solo antojo.</strong>
+          </p>
+          <div class="hero-actions reveal d5">
+            <a class="btn btn--fire" href="#sabores">Descubrir sabores</a>
+            <a class="btn btn--ghost" href="https://wa.me/526271509265?text=%C2%A1Hola!%20Quiero%20pedir%20Salsa%20Abuela%20Macha%20%F0%9F%8C%B6%EF%B8%8F" target="_blank" rel="noopener">
+              Pedir por WhatsApp
+            </a>
+          </div>
+          <div class="hero-stats reveal d6">
+            <div class="stat"><strong data-count="8">0</strong><span>sabores</span></div>
+            <div class="stat"><strong data-count="100">0</strong><span>% artesanal</span></div>
+            <div class="stat"><strong>∞</strong><span>antojos</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal d3">
+          <div class="hero-ring" aria-hidden="true"></div>
+          <div class="hero-logo-wrap">
+            <img src="macha.jpg" alt="Logo Abuela Macha" class="hero-logo" />
+          </div>
+          <div class="hero-chip hero-chip--1 float-a">🌶️ Chile de árbol</div>
+          <div class="hero-chip hero-chip--2 float-b">🫙 Frasco 250 ml</div>
+          <div class="hero-chip hero-chip--3 float-c">🔥 Crujiente</div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>SALSA MACHA ARTESANAL <i>🌶️</i> HECHA EN PARRAL <i>🔥</i> EL TOQUE PERFECTO EN CADA BOCADO <i>🫙</i> RECETA DE LA ABUELA <i>✨</i>&nbsp;</span>
+        <span>SALSA MACHA ARTESANAL <i>🌶️</i> HECHA EN PARRAL <i>🔥</i> EL TOQUE PERFECTO EN CADA BOCADO <i>🫙</i> RECETA DE LA ABUELA <i>✨</i>&nbsp;</span>
+      </div>
+    </div>
+
+    <!-- ============ SABORES ============ -->
+    <section class="flavors" id="sabores">
+      <div class="section-head">
+        <p class="kicker reveal">Los protagonistas</p>
+        <h2 class="section-title reveal">OCHO FORMAS DE <span>ENAMORARTE</span></h2>
+        <p class="section-sub reveal">Del picor coqueto al modo diablo. Hay una Abuela Macha para cada valiente.</p>
+      </div>
+
+      <div class="flavor-grid">
+
+        <article class="flavor-card reveal" data-tilt style="--c1:#f07b3f; --c2:#9c3d0e; --chip:#f07b3f;">
+          <div class="jar"><div class="jar-lid"></div><div class="jar-body"><img src="macha.jpg" alt="" class="jar-label" /></div></div>
+          <div class="flavor-info">
+            <span class="flavor-emoji">🫑</span>
+            <h3>Poco Picante</h3>
+            <p>Todo el sabor de la macha con poquito fuego. La puerta de entrada perfecta.</p>
+            <div class="heat"><i class="on"></i><i></i><i></i><i></i><i></i></div>
+          </div>
+        </article>
+
+        <article class="flavor-card reveal" data-tilt style="--c1:#ff4a2a; --c2:#b3121a; --chip:#ff4a2a;">
+          <div class="jar"><div class="jar-lid"></div><div class="jar-body"><img src="macha.jpg" alt="" class="jar-label" /></div></div>
+          <div class="flavor-info">
+            <span class="flavor-emoji">🌶️</span>
+            <h3>Picante</h3>
+            <p>El clásico. Chile tostado, ajo y aceite dorado. Empieza aquí tu historia.</p>
+            <div class="heat"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></div>
+          </div>
+        </article>
+
+        <article class="flavor-card reveal" data-tilt style="--c1:#ff2d12; --c2:#7d0a04; --chip:#ff2d12;">
+          <div class="jar"><div class="jar-lid"></div><div class="jar-body"><img src="macha.jpg" alt="" class="jar-label" /></div></div>
+          <div class="flavor-info">
+            <span class="flavor-emoji">🔥</span>
+            <h3>Muy Picante</h3>
+            <p>Sube dos escalones. Para los que dicen “a mí no me pica nada”.</p>
+            <div class="heat"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div>
+          </div>
+        </article>
+
+        <article class="flavor-card flavor-card--danger reveal" data-tilt style="--c1:#8f0404; --c2:#2b0202; --chip:#ff1600;">
+          <div class="jar"><div class="jar-lid"></div><div class="jar-body"><img src="macha.jpg" alt="" class="jar-label" /></div></div>
+          <div class="flavor-info">
+            <span class="flavor-emoji">🚨</span>
+            <h3>Extra Picante</h3>
+            <p>Advertencia oficial: no es para principiantes. Firma aquí tu valentía.</p>
+            <div class="heat"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div>
+          </div>
+        </article>
+
+        <article class="flavor-card reveal" data-tilt style="--c1:#ffb300; --c2:#c46a00; --chip:#ffb300;">
+          <div class="jar"><div class="jar-lid"></div><div class="jar-body"><img src="macha.jpg" alt="" class="jar-label" /></div></div>
+          <div class="flavor-info">
+            <span class="flavor-emoji">🍍</span>
+            <h3>Macha de Piña</h3>
+            <p>Tropical y traviesa. Dulzor dorado con el golpe justo de chile.</p>
+            <div class="heat"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></div>
+          </div>
+        </article>
+
+        <article class="flavor-card reveal" data-tilt style="--c1:#ff5d7e; --c2:#c1143f; --chip:#ff5d7e;">
+          <div class="jar"><div class="jar-lid"></div><div class="jar-body"><img src="macha.jpg" alt="" class="jar-label" /></div></div>
+          <div class="flavor-info">
+            <span class="flavor-emoji">🍓</span>
+            <h3>Macha de Fresa</h3>
+            <p>La favorita inesperada. Frutal, fresca y con un picor que coquetea.</p>
+            <div class="heat"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></div>
+          </div>
+        </article>
+
+        <article class="flavor-card reveal" data-tilt style="--c1:#ff8a00; --c2:#b35500; --chip:#ff8a00;">
+          <div class="jar"><div class="jar-lid"></div><div class="jar-body"><img src="macha.jpg" alt="" class="jar-label" /></div></div>
+          <div class="flavor-info">
+            <span class="flavor-emoji">🥭</span>
+            <h3>Macha de Mango</h3>
+            <p>Mango maduro + chile seco = la combinación que no sabías que necesitabas.</p>
+            <div class="heat"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></div>
+          </div>
+        </article>
+
+        <article class="flavor-card reveal" data-tilt style="--c1:#e91e63; --c2:#6d0c34; --chip:#e91e63;">
+          <div class="jar"><div class="jar-lid"></div><div class="jar-body"><img src="macha.jpg" alt="" class="jar-label" /></div></div>
+          <div class="flavor-info">
+            <span class="flavor-emoji">🌺</span>
+            <h3>Macha de Jamaica</h3>
+            <p>Flor de jamaica + chile: ácida, fresca y con un picor elegante. La sorpresa de la casa.</p>
+            <div class="heat"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ MEDIDOR DE FUEGO ============ -->
+    <section class="heatlab" id="fuego">
+      <div class="heatlab-inner">
+        <div class="section-head">
+          <p class="kicker reveal">Laboratorio de fuego</p>
+          <h2 class="section-title reveal">¿CUÁNTO FUEGO <span>AGUANTAS?</span></h2>
+          <p class="section-sub reveal">Mueve el medidor y encuentra tu salsa ideal.</p>
+        </div>
+
+        <div class="heatlab-panel reveal">
+          <div class="heatlab-face" id="heatFace">🙂</div>
+          <input type="range" id="heatRange" min="1" max="8" step="1" value="4" aria-label="Nivel de picante" />
+          <div class="heatlab-ticks"><span>Suave</span><span>Medio</span><span>Diablo</span></div>
+          <div class="heatlab-result">
+            <p class="heatlab-level" id="heatLevel">Se siente rico</p>
+            <p class="heatlab-rec">Tu salsa: <strong id="heatSalsa">Macha de Piña 🍍</strong></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ USOS ============ -->
+    <section class="uses" id="usos">
+      <div class="section-head">
+        <p class="kicker reveal">Sin reglas</p>
+        <h2 class="section-title reveal">PÓNLE A <span>TODO</span></h2>
+        <p class="section-sub reveal">Si se puede comer, se puede mejorar.</p>
+      </div>
+      <div class="uses-grid">
+        <div class="use-card reveal"><span>🌮</span><h3>Tacos</h3><p>El matrimonio más feliz de México.</p></div>
+        <div class="use-card reveal"><span>🥩</span><h3>Carnes</h3><p>Cortes, asados y parrilladas con carácter.</p></div>
+        <div class="use-card reveal"><span>🦐</span><h3>Mariscos</h3><p>Camarón, aguachile y ceviche nivel pro.</p></div>
+        <div class="use-card reveal"><span>🍿</span><h3>Botanas</h3><p>Papas, cacahuates y chicharrones elevados.</p></div>
+        <div class="use-card reveal"><span>🍳</span><h3>Desayunos</h3><p>Huevos, chilaquiles y burritos mañaneros.</p></div>
+        <div class="use-card reveal"><span>🍕</span><h3>Y mucho más</h3><p>Pizza, elotes, fruta… atrévete a inventar.</p></div>
+      </div>
+    </section>
+
+    <!-- ============ HISTORIA ============ -->
+    <section class="story" id="historia">
+      <div class="story-inner">
+        <div class="story-visual reveal">
+          <div class="story-frame">
+            <img src="macha.jpg" alt="La abuela detrás de la receta" />
+          </div>
+          <div class="story-stamp float-b">Desde<br />Parral</div>
+        </div>
+        <div class="story-copy">
+          <p class="kicker reveal">La receta</p>
+          <h2 class="section-title reveal">DE LA COCINA DE LA ABUELA <span>A TU MESA</span></h2>
+          <p class="reveal">
+            En Parral, Chihuahua, la abuela tostaba los chiles en comal de fierro,
+            los molía a mano y sellaba cada frasco con un secreto:
+            <em>“que pique bonito, pero que sepa más”.</em>
+          </p>
+          <p class="reveal">
+            Hoy cada frasco de <strong>Abuela Macha</strong> se hace igual: en tandas
+            pequeñas, con chiles seleccionados, aceite dorado y cero atajos.
+            Artesanal de verdad, como la primera vez.
+          </p>
+          <ul class="story-list reveal">
+            <li>✔ Chiles tostados a mano</li>
+            <li>✔ Tandas pequeñas, frescura real</li>
+            <li>✔ Sin conservadores artificiales</li>
+            <li>✔ Textura crujiente inconfundible</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIOS ============ -->
+    <section class="quotes">
+      <div class="section-head">
+        <p class="kicker reveal">Los que ya probaron</p>
+        <h2 class="section-title reveal">ADICTOS <span>CONFESOS</span></h2>
+      </div>
+      <div class="quotes-grid">
+        <blockquote class="quote reveal">
+          <p>“Le puse la de mango a unos tacos al pastor y entendí todo. Ahora cargo el frasco en la bolsa.”</p>
+          <footer>— Marifer G. <span>Parral</span></footer>
+        </blockquote>
+        <blockquote class="quote reveal">
+          <p>“La Extra Picante me hizo sudar y llorar… y volví por más. 10/10 volvería a sufrir.”</p>
+          <footer>— El Chino <span>valiente certificado</span></footer>
+        </blockquote>
+        <blockquote class="quote reveal">
+          <p>“En mi restaurante la ponemos en la mesa. Los clientes preguntan si vendemos frascos.”</p>
+          <footer>— Chef Rulo <span>Chihuahua</span></footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ============ CTA FINAL ============ -->
+    <section class="cta" id="contacto">
+      <div class="cta-embers" aria-hidden="true"></div>
+      <div class="cta-inner">
+        <p class="kicker kicker--light reveal">Sin más preámbulo</p>
+        <h2 class="cta-title reveal">¿LISTO PARA<br /><span>EL FUEGO?</span></h2>
+        <p class="cta-sub reveal">Escríbenos, elige tu sabor y estrena frasco esta semana.</p>
+        <a class="btn btn--wa reveal" href="https://wa.me/526271509265?text=%C2%A1Hola!%20Quiero%20pedir%20Salsa%20Abuela%20Macha%20%F0%9F%8C%B6%EF%B8%8F" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91A9.86 9.86 0 0 0 12.04 2Zm5.8 14.12c-.25.7-1.45 1.33-2.02 1.42-.52.08-1.17.11-1.89-.12-.44-.14-1-.32-1.71-.63-3.02-1.3-4.99-4.34-5.14-4.54-.15-.2-1.23-1.63-1.23-3.11 0-1.48.78-2.21 1.05-2.51.28-.3.6-.38.8-.38.2 0 .4 0 .58.01.18.01.43-.07.68.52.25.6.85 2.08.92 2.23.08.15.13.33.03.53-.1.2-.15.32-.3.5-.15.18-.32.4-.45.53-.15.15-.31.31-.13.61.18.3.79 1.3 1.69 2.11 1.16 1.04 2.14 1.36 2.44 1.51.3.15.48.13.65-.08.18-.2.75-.87.95-1.17.2-.3.4-.25.68-.15.28.1 1.75.83 2.05.98.3.15.5.22.58.35.07.13.07.75-.18 1.42Z"/></svg>
+          Pedir por WhatsApp
+        </a>
+        <p class="cta-phone reveal">o marca al <a href="tel:+526271509265">627 150 9265</a></p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="nav-logo"><img src="macha.jpg" alt="" /></span>
+        <div>
+          <strong>Abuela Macha</strong>
+          <p>Salsa macha artesanal · Hecha en Parral, Chihuahua</p>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="#sabores">Sabores</a>
+        <a href="#fuego">Medidor</a>
+        <a href="#usos">Úsala en</a>
+        <a href="https://wa.me/526271509265" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+    <p class="footer-legal">© 2026 Abuela Macha · El toque perfecto en cada bocado 🌶️</p>
+  </footer>
+
+  <!-- ============ WHATSAPP FLOTANTE ============ -->
+  <a class="wa-float" href="https://wa.me/526271509265?text=%C2%A1Hola!%20Quiero%20pedir%20Salsa%20Abuela%20Macha%20%F0%9F%8C%B6%EF%B8%8F" target="_blank" rel="noopener" aria-label="Pedir por WhatsApp">
+    <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91A9.86 9.86 0 0 0 12.04 2Zm5.8 14.12c-.25.7-1.45 1.33-2.02 1.42-.52.08-1.17.11-1.89-.12-.44-.14-1-.32-1.71-.63-3.02-1.3-4.99-4.34-5.14-4.54-.15-.2-1.23-1.63-1.23-3.11 0-1.48.78-2.21 1.05-2.51.28-.3.6-.38.8-.38.2 0 .4 0 .58.01.18.01.43-.07.68.52.25.6.85 2.08.92 2.23.08.15.13.33.03.53-.1.2-.15.32-.3.5-.15.18-.32.4-.45.53-.15.15-.31.31-.13.61.18.3.79 1.3 1.69 2.11 1.16 1.04 2.14 1.36 2.44 1.51.3.15.48.13.65-.08.18-.2.75-.87.95-1.17.2-.3.4-.25.68-.15.28.1 1.75.83 2.05.98.3.15.5.22.58.35.07.13.07.75-.18 1.42Z"/></svg>
+  </a>
+
+  <script src="app.js"></script>
+</body>
+</html>
