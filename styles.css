@@ -572,6 +572,80 @@ section { position: relative; }
   box-shadow: 0 0 10px color-mix(in srgb, var(--chip) 60%, transparent);
 }
 
+/* ---------- showcase (foto real) ---------- */
+.showcase {
+  padding: clamp(3rem, 8vh, 6rem) clamp(1.2rem, 4vw, 3rem);
+  background: var(--bg);
+}
+.showcase-media {
+  position: relative;
+  max-width: 1240px;
+  margin: 0 auto;
+  height: clamp(380px, 72vh, 620px);
+  border-radius: 28px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  box-shadow: 0 40px 90px rgba(0, 0, 0, 0.55), 0 0 60px rgba(232, 48, 28, 0.08);
+}
+.showcase-media img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center 62%;
+  transform: scale(1.18);
+  will-change: transform;
+}
+.showcase-shade {
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(180deg, rgba(18, 8, 6, 0.45), transparent 32%, transparent 52%, rgba(18, 8, 6, 0.88)),
+    linear-gradient(90deg, rgba(18, 8, 6, 0.35), transparent 55%);
+}
+.showcase-caption {
+  position: absolute;
+  left: clamp(1.4rem, 4vw, 3rem);
+  bottom: clamp(1.4rem, 4vw, 2.8rem);
+  max-width: 560px;
+}
+.showcase-caption .kicker { margin-bottom: 0.2rem; }
+.showcase-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.9rem, 4.6vw, 3.4rem);
+  line-height: 1;
+  text-transform: uppercase;
+  text-shadow: 0 4px 30px rgba(0, 0, 0, 0.65);
+}
+.showcase-title span {
+  background: linear-gradient(100deg, var(--yellow), var(--red-hot));
+  -webkit-background-clip: text; background-clip: text;
+  color: transparent;
+}
+.showcase-sub {
+  color: var(--cream-dim);
+  font-weight: 300;
+  margin-top: 0.7rem;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.8);
+}
+.showcase-stamp {
+  position: absolute;
+  top: clamp(1.2rem, 3vw, 2rem);
+  right: clamp(1.2rem, 3vw, 2rem);
+  width: 104px; height: 104px;
+  border-radius: 50%;
+  background: var(--red);
+  color: var(--cream);
+  font-family: var(--font-script);
+  font-size: 1.3rem; font-weight: 700;
+  display: grid; place-items: center;
+  text-align: center; line-height: 1.05;
+  transform: rotate(8deg);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.5);
+  animation: stampFloat 6s ease-in-out infinite;
+}
+@keyframes stampFloat {
+  0%, 100% { transform: rotate(var(--rot, 8deg)) translateY(0); }
+  50% { transform: rotate(var(--rot, 8deg)) translateY(-8px); }
+}
+
 /* ---------- heat lab ---------- */
 .heatlab {
   padding: clamp(5rem, 11vh, 8rem) clamp(1.2rem, 4vw, 3rem);
@@ -717,7 +791,9 @@ section { position: relative; }
   padding: 1rem 1.2rem;
   border-radius: 50%;
   transform: rotate(-8deg);
+  --rot: -8deg;
   box-shadow: 0 12px 30px rgba(232, 48, 28, 0.5);
+  animation: stampFloat 6.5s ease-in-out 0.8s infinite;
 }
 .story-copy .kicker { text-align: left; }
 .story-copy .section-title { text-align: left; margin-bottom: 1.4rem; }

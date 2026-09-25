@@ -138,6 +138,21 @@ function updateHeat() {
 }
 range.addEventListener("input", updateHeat);
 
+// ---------- parallax en la foto de frascos ----------
+const showcaseImg = document.getElementById("showcaseImg");
+if (showcaseImg) {
+  const media = showcaseImg.parentElement;
+  function parallax() {
+    const r = media.getBoundingClientRect();
+    if (r.bottom < -80 || r.top > innerHeight + 80) return;
+    const progress = (innerHeight - r.top) / (innerHeight + r.height);
+    showcaseImg.style.transform =
+      `scale(1.18) translateY(${(progress - 0.5) * 90}px)`;
+  }
+  addEventListener("scroll", parallax, { passive: true });
+  parallax();
+}
+
 // ---------- glow que sigue al cursor ----------
 const glow = document.getElementById("cursorGlow");
 let gx = innerWidth / 2, gy = innerHeight / 2, tx = gx, ty = gy;
